@@ -1,0 +1,30 @@
+<DOCTYPE! html>
+  <html>
+    <title>Todolist</title>
+      <meta charset="utf-8">
+        <href="todolist.css" rel="stylesheet"
+  <body>
+      <form action="/create" method="post">
+        <h1>ToDo List</h1>
+        <form method="post" action="complete>"
+        <input type="text" name="todo" placeholder="Add ToDo">
+        <button type"submit">Add ToDo</button>
+      </form>
+        <hr>
+        <form method="post" action="/complete">
+        <h1>Tasks</h1>
+        <ul name="List">
+          {{#todos}}
+          <li>
+            {{title}}
+            <button type="submit" name="todo" value="{{id}}">Mark As Complete </button>
+          </li>
+          {{/todos}}
+        </ul>
+        {{^todos}}
+        <h2>Nothing to do</h2>
+          {{/todos}}
+      </form>
+      <script type="text/javascript" src="todolist.js"></script>
+  </body>})
+</html>
